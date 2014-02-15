@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-Wall -W -pedantic
-CLIBS=-lfreenect -L/usr/lib/i386-linux-gnu
+CLIBS=-lfreenect -lfreenect_sync -L/usr/lib/i386-linux-gnu
 
 ktl: main.o params.o timelapse.o
 	$(CC) *.o $(CLIBS) -o ktl
