@@ -11,6 +11,10 @@ typedef struct _Params {
    char prefix[FILELEN];
    unsigned int fps;
    unsigned int videolen;
+   /*TODO Are you sure about these variable types?*/
+   unsigned int rstart;
+   unsigned int rend;
+   unsigned int rlen;
 } Params;
 
 Params parseParams(int argc, char **argv);
